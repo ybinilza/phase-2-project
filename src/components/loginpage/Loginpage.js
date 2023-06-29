@@ -1,21 +1,58 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import "./Loginpage.css"
 
 
 function Loginpage() {
 
+  const [userName , setUserName] =useState("");
+  const [password, setPassword] =useState("");
+  const[loginData, setLoginData] =useState([])
+  const [validLogin,setValidLogin]=useState(false)
+console.log(validLogin)
 
-  const [userName , setUserName] =useState("")
+
+useEffect(()=>
+{   
+   fetch(" http://localhost:3030/login")
+    .then((response)=>response.json())
+    .then((data) =>
+    {
+      setLoginData(data);
+    })
+
+},[])
+
+
+if(validLogin===true)
+{
+  console.log("Login Successfull")
+}
+
+
+function handleValidateSubmit(e)
+{    e.preventDefault()
+   
+    loginData.map((userLogin)=>
+    { 
+    
+       if(userName === userLogin.username && password === userLogin.password  )
+       {
+        setValidLogin(!validLogin)
+        //console.log(userLogin)
+       }
+
+    })
+}
 
   return (
   
     <div className='loginpage'>
-        <form className='loginform'>
+        <form className='loginform' onSubmit={(e)=>handleValidateSubmit(e)}>
             <div className="formelements">
                 <h3>User Name</h3>
                 <input type='text' placeholder='Enter User Name' onChange={(e)=>setUserName(e.target.value)} />
                 <h3>Password</h3>
-                <input type="password" placeholder='Enter Password' />
+                <input type="password" placeholder='Enter Password' onChange={(e)=>setPassword(e.target.value)} />
                 <div>
                       
                 <input type='submit' />
@@ -23,7 +60,7 @@ function Loginpage() {
             </div>
 
         </form>
-      
+    
     </div>
   )
 }
