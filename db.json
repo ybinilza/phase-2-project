@@ -1,0 +1,28 @@
+{
+  "login": 
+  [{
+  "id": 1,
+  "name": "Binil",
+  "username": "binil24",
+  "password": "binil",
+  "email": "binil24@gmail.com"
+
+},
+{
+  "id": 2,
+  "name": "Reni",
+  "username": "reni36",
+  "password": "reni",
+  "email": "reni123@gmail.com"
+
+},
+{
+  "id": 3,
+  "name": "Olivia",
+  "username": "olivia01",
+  "password": "oli",
+  "email": "oli01@gmail.com"
+
+}
+]
+}
