@@ -1,0 +1,21 @@
+.mainpageposter{
+    margin: 20px;
+    color: #fff;
+}
+.movieposter{
+    display:flex-wrap wrap;
+    margin-top: 100px;
+   
+    padding: 20px;
+     ;
+}
+
+
+
+.poster{
+    
+    
+    max-height: 250px;
+    margin-right: 10px;
+     
+}

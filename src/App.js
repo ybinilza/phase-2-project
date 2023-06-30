@@ -1,4 +1,5 @@
 import './App.css';
+import Mainpageposter from './components/MainPagePoster/Mainpageposter';
 import Navbar from './components/NavBar/Navbar';
 import Searchbar from './components/SearchBar/Searchbar';
 import Loginpage from './components/loginpage/Loginpage';
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
-   
+   <Mainpageposter/>
     </div>
   );
 }
