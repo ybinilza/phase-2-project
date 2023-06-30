@@ -1,5 +1,9 @@
 import React from 'react'
 import "./Navbar.css"
+import Topratedmovies from '../TopRatedMovies/Topratedmovies'
+import Mainpageposter from '../MainPagePoster/Mainpageposter'
+import Upcoming from '../upcoming/Upcoming'
+import { BrowserRouter, Route, Switch,NavLink,useHistory } from "react-router-dom";
 
 function Navbar() {
   return (
