@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-/*
-body{
-  background-image: url("/home/binil/Development/code/phase-2/pjct-phase-2/trailertube/src/images/pxfuel.jpg");
 
-}*/
+body{
+   background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
