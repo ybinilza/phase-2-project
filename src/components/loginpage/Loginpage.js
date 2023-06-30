@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import "./Loginpage.css"
+import Signup from '../signup/Signup';
 
 
 function Loginpage() {
@@ -8,7 +9,7 @@ function Loginpage() {
   const [password, setPassword] =useState("");
   const[loginData, setLoginData] =useState([])
   const [validLogin,setValidLogin]=useState(false)
-console.log(validLogin)
+
 
 
 useEffect(()=>
@@ -21,12 +22,6 @@ useEffect(()=>
     })
 
 },[])
-
-
-if(validLogin===true)
-{
-  console.log("Login Successfull")
-}
 
 
 function handleValidateSubmit(e)
@@ -58,7 +53,7 @@ function handleValidateSubmit(e)
                 <input type='submit' />
                 </div>
             </div>
-
+           
         </form>
     
     </div>
