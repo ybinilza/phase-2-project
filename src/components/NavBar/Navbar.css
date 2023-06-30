@@ -37,3 +37,10 @@
 	position:relative;
 	top:1px;
 }
+
+
+.searchbar{
+	margin-right: 10px;
+	margin: auto;
+	width: 550px;
+}

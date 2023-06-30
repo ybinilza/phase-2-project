@@ -12,6 +12,7 @@ function Navbar() {
        <button className='button'>Trending</button>
        <button className='button'>Upcoming</button>
        </div>
+       <input type="text" className="searchbar" placeholder='Search for movies here 🎥' />
     </div>
 
 
