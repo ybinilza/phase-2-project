@@ -3,14 +3,19 @@
     color: #fff;
 }
 .movieposter{
-    display:flex-wrap wrap;
+   
     margin-top: 100px;
    
     padding: 20px;
      ;
 }
 
-
+.movietitle{
+    color: black;
+    
+    
+    
+}
 
 .poster{
     
@@ -18,4 +23,12 @@
     max-height: 250px;
     margin-right: 10px;
      
+}
+
+
+
+.postercontainer{
+    display: flex;
+    flex-wrap: wrap;
+
 }
