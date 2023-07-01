@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react'
 import "./Loginpage.css"
 import Signup from '../signup/Signup';
 
-
+import Navbar from '../NavBar/Navbar';
+/*
 function Loginpage() {
 
   const [userName , setUserName] =useState("");
@@ -33,12 +34,15 @@ function handleValidateSubmit(e)
        if(userName === userLogin.username && password === userLogin.password  )
        {
         setValidLogin(!validLogin)
-        //console.log(userLogin)
+        console.log(validLogin)
+
        }
 
     })
 }
 
+  const loginPageView = ()=>
+ {
   return (
   
     <div className='loginpage'>
@@ -51,13 +55,26 @@ function handleValidateSubmit(e)
                 <div>
                       
                 <input type='submit' />
+                
                 </div>
             </div>
            
         </form>
-    
+        
     </div>
   )
+
+ }
+ return(
+     
+    {  validLogin ? <Navbar/> : loginPageView}
+    
+  
+ )
+  
 }
 
 export default Loginpage
+
+
+/* {validLogin? <Navbar/> : null}*/

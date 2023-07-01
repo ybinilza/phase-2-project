@@ -6,12 +6,13 @@ import Topratedmovies from './components/TopRatedMovies/Topratedmovies';
 import Loginpage from './components/loginpage/Loginpage';
 import Signup from './components/signup/Signup';
 import Upcoming from './components/upcoming/Upcoming';
+import { BrowserRouter, Route, Switch,NavLink,useHistory } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-   <Navbar/>
-   
+       <Navbar></Navbar>
+        
     </div>
   );
 }

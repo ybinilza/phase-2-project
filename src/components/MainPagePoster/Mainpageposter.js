@@ -9,15 +9,27 @@ function Mainpageposter() {
     //const[movieId,setMovieId]=useState("")
     const[youtubeid, setYouTubeId]=useState("")
 
+   
 
+/*
     
-     
+const video = ()=>
+{   console.log("hello")
+     youtubeid.map((obj)=>
+     {
+      console.log(obj.id)
+      return ( `{<YouTube className='youtube' videoId=${obj.key} opts={opts} />}` )
+     })
+   
+}
+
+  */   
      useEffect(()=>
      {
         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
         .then((response)=>response.json())
         .then((data) =>
-        { console.log(data)
+        { 
           setMovie(data.results);
         })
      },[])
@@ -33,19 +45,17 @@ function Mainpageposter() {
     
 
 function handleClick(id)
-{        console.log(id)
-         
-
+{        //console.log(id)         
         fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
         .then((response)=>response.json())
         .then((data) =>
-        { setYouTubeId(data.results[0])
+        { //console.log(data.results)
+          setYouTubeId(data.results[0])
           
         })
-    
-
-
+  
 }
+
 
     return (
         
@@ -72,6 +82,7 @@ function handleClick(id)
             }
             
             </div>
+            
             {youtubeid && <YouTube className='youtube' videoId={youtubeid.key} opts={opts} />}
         </div>
         
@@ -81,3 +92,6 @@ function handleClick(id)
 }
 
 export default Mainpageposter
+
+
+/*   {youtubeid && <YouTube className='youtube' videoId={youtubeid.key} opts={opts} />} */
