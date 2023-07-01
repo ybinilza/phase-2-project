@@ -1,0 +1,41 @@
+.listofmovies{
+    margin-top: 100px;
+    margin-left: 100px; 
+    line-height: 2;
+    text-transform: uppercase;
+    color: #972323;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+font-size: 20px;
+font-style: italic;
+}
+
+
+
+.movielist{
+    display: flex;
+
+}
+
+.movieheading{
+    margin-top: 150px;
+    margin-left:200px ;
+    margin-bottom: 25px;
+
+    background: #CF467D;
+   background: radial-gradient(ellipse farthest-corner at center center, #CF467D 0%, #382B37 100%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.moviedisplay{
+    margin-top: 0px;
+    margin-left:250px ;
+    margin-bottom: 100px;
+}
+
+.usermovieposter{
+    max-height: 300px;
+    cursor: pointer;
+}

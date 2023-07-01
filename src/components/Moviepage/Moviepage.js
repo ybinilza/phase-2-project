@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import "./Mainpageposter.css"
+import "./Moviepage.css"
 import { API_KEY,imageUrl} from '../constants/constant'
 import YouTube from 'react-youtube'
 
-function Mainpageposter() {
+function Moviepage(props) {
   
     const[movie,setMovie] = useState([])
     //const[movieId,setMovieId]=useState("")
@@ -21,12 +21,12 @@ const video = ()=>
       return ( `{<YouTube className='youtube' videoId=${obj.key} opts={opts} />}` )
      })
    
-}
+} 
 
   */   
      useEffect(()=>
      {
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
+        fetch(`https://api.themoviedb.org/3/movie/${props.movietype}?api_key=${API_KEY}`)
         .then((response)=>response.json())
         .then((data) =>
         { 
@@ -91,7 +91,7 @@ function handleClick(id)
   )
 }
 
-export default Mainpageposter
+export default Moviepage
 
 
-/*   {youtubeid && <YouTube className='youtube' videoId={youtubeid.key} opts={opts} />} */
+

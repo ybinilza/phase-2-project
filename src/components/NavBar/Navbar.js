@@ -1,10 +1,9 @@
 import React from 'react'
 import "./Navbar.css"
-import Topratedmovies from '../TopRatedMovies/Topratedmovies'
-import Mainpageposter from '../MainPagePoster/Mainpageposter'
-import Upcoming from '../upcoming/Upcoming'
-import { BrowserRouter, Route, Switch,NavLink,useHistory } from "react-router-dom";
+import Moviepage from '../Moviepage/Moviepage.js'
+import {  Route,useHistory } from "react-router-dom";
 import Addmovie from '../Addmovie/Addmovie'
+import Moviesaddedbyuser from '../Moviesaddedbyuser/Moviesaddedbyuser'
 
 function Navbar() {
  
@@ -18,16 +17,17 @@ function Navbar() {
         <button className='button' onClick={()=>history.push("/popularmovies")}>Popular Movies</button>
        <button onClick={()=>history.push("/topratedmovies")} className='button'>Top Rated Movies </button>
        <button onClick={()=>history.push("/upcomingmovies")} className='button'>Upcoming Movies</button>
-       <button onClick={()=>history.push("/addmoviebyuser")} className='button'>Add Movies By User</button>
-       <button className='button'>Movies Added By User</button>
+       <button onClick={()=>history.push("/addmoviebyuser")} className='button'>Add Your Favorite Movie</button>
+       <button  onClick={()=>history.push("/Moviesaddedbyuser")} className='button'>Favorite Movie List</button>
        </div>
        <input type="text" className="searchbar" placeholder='Search for movies here 🎥' />
        
     </div>
-    <Route component={Mainpageposter} path="/popularmovies"/>
-    <Route component={Topratedmovies} path="/topratedmovies"/>
-    <Route component={Upcoming} path="/upcomingmovies"/>
+    <Route component={() => <Moviepage movietype={"popular"}/>} path="/popularmovies"/>
+    <Route component={() => <Moviepage movietype={"top_rated"}/>} path="/topratedmovies"/>
+    <Route component={() => <Moviepage movietype={"upcoming"}/>} path="/upcomingmovies"/>
     <Route component={Addmovie} path="/addmoviebyuser"/>
+    <Route component={Moviesaddedbyuser} path="/Moviesaddedbyuser"/>
     </div> 
     
   )
@@ -35,4 +35,4 @@ function Navbar() {
 
 export default Navbar
 
-
+//component={() => <PropsPage title={`Props through component`} />}

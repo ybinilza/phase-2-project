@@ -41,6 +41,10 @@ function handleSubmit(e)
       })
         .then((r) => r.json())
         setMoviedata([...moviedata,itemData])
+
+        setMovieName("")
+        setMovieLanguage("")
+        setOriginCountry("")
   }
   
   return (
@@ -54,8 +58,10 @@ function handleSubmit(e)
                 <h3  className='heading'>MOVIE LANGUAGE</h3>
                 <input className='inputbox' type="text" placeholder='Enter Language......' onChange={(e)=>setMovieLanguage(e.target.value)}  />
                 <div>
-                      
-                <input type='submit' />
+                  
+                  <input className='buttonsubmit' type='submit' />
+                       
+                
                 
                 </div>
             </div>
