@@ -47,12 +47,12 @@ function handleSubmit(e)
     <div className='moviesubmission'>
         <form className='addmovie'  onSubmit={(e)=>handleSubmit(e)}>
             <div className="formelements">
-                <h3>MOVIE NAME</h3>
-                <input type='text' placeholder='Enter Movie Name......' onChange={(e)=>setMovieName(e.target.value)}  />
-                <h3>COUNTRY OF ORIGIN</h3>
-                <input type="text" placeholder='Enter Country Name......' onChange={(e)=>setOriginCountry(e.target.value)} />
-                <h3>MOVIE LANGUAGE</h3>
-                <input type="text" placeholder='Enter Language......' onChange={(e)=>setMovieLanguage(e.target.value)}  />
+                <h3 className='heading'>MOVIE NAME</h3>
+                <input className='inputbox' type='text' placeholder='Enter Movie Name......' onChange={(e)=>setMovieName(e.target.value)}  />
+                <h3  className='heading'>COUNTRY OF ORIGIN</h3>
+                <input className='inputbox' type="text" placeholder='Enter Country Name......' onChange={(e)=>setOriginCountry(e.target.value)} />
+                <h3  className='heading'>MOVIE LANGUAGE</h3>
+                <input className='inputbox' type="text" placeholder='Enter Language......' onChange={(e)=>setMovieLanguage(e.target.value)}  />
                 <div>
                       
                 <input type='submit' />
