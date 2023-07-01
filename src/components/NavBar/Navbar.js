@@ -19,6 +19,7 @@ function Navbar() {
        <button onClick={()=>history.push("/topratedmovies")} className='button'>Top Rated Movies </button>
        <button onClick={()=>history.push("/upcomingmovies")} className='button'>Upcoming Movies</button>
        <button onClick={()=>history.push("/addmoviebyuser")} className='button'>Add Movies By User</button>
+       <button className='button'>Movies Added By User</button>
        </div>
        <input type="text" className="searchbar" placeholder='Search for movies here 🎥' />
        

@@ -1,36 +1,67 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import "./Addmovie.css"
 
 function Addmovie() {
+
+    const[moviedata,setMoviedata]=useState()
+    const[movieName,setMovieName]=useState("");
+    const[originCountry,setOriginCountry]=useState("")
+    const[movieLanguage, setMovieLanguage]=useState("")
+
+    console.log(moviedata)
+
+    useEffect(()=>
+    {   
+       fetch( " http://localhost:3000/movies" )
+        .then((response)=>response.json())
+        .then((data) =>
+        { console.log(data)
+          setMoviedata(data);
+        })
+    
+    },[])
+
+
+function handleSubmit(e)
+ {    
+    e.preventDefault()
+    const itemData ={
+        name:movieName,
+        orgin:originCountry,
+        language:movieLanguage,    
+    }
+    console.log(itemData)
+
+    fetch( "http://localhost:3000/movies", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(itemData),
+      })
+        .then((r) => r.json())
+        setMoviedata([...moviedata,itemData])
+  }
+  
   return (
-    <div className='addmovieform'>
-      <form class="form-horizontal">
-      <fieldset>
-      <legend>Movie Submission </legend>
-
-       <div class="form-group">
-         <label class="col-md-4 control-label" for="orgincountry">COUNTRY OF ORGIN</label>  
-         <div class="col-md-4">
-         <input id="orgincountry" name="orgincountry" type="text" placeholder="" class="form-control input-md" />
-         </div>
-        </div>
-
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="moviename">ENTER MOVIE NAME</label>  
-      <div class="col-md-4">
-       <input id="moviename" name="moviename" type="text" placeholder="enter movie name" class="form-control input-md" />
-      </div>
-     </div>
-
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="singlebutton"></label>
-    <div class="col-md-4">
-      <button id="singlebutton" name="singlebutton" class="btn btn-primary">SUBMIT</button>
-    </div>
-    </div>
-
-</fieldset>
-</form>
+    <div className='moviesubmission'>
+        <form className='addmovie'  onSubmit={(e)=>handleSubmit(e)}>
+            <div className="formelements">
+                <h3>MOVIE NAME</h3>
+                <input type='text' placeholder='Enter Movie Name......' onChange={(e)=>setMovieName(e.target.value)}  />
+                <h3>COUNTRY OF ORIGIN</h3>
+                <input type="text" placeholder='Enter Country Name......' onChange={(e)=>setOriginCountry(e.target.value)} />
+                <h3>MOVIE LANGUAGE</h3>
+                <input type="text" placeholder='Enter Language......' onChange={(e)=>setMovieLanguage(e.target.value)}  />
+                <div>
+                      
+                <input type='submit' />
+                
+                </div>
+            </div>
+           
+        </form>
+        
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.moviesubmission{
+   
+    border: none;
+    overflow: auto;
+    resize: both;
+
+    width: 302px;
+    height: 542px;
+    margin-left: 38%;
+    margin-top: 150px;
+    border-radius: 19px;
+    padding: 40px;
+}
+
+.addmovie{
+    line-height: 2;
+}
