@@ -12,7 +12,7 @@ function Addmovie() {
 
     useEffect(()=>
     {   
-       fetch( " http://localhost:3000/movies" )
+       fetch( " https://biniltz.onrender.com/movies" )
         .then((response)=>response.json())
         .then((data) =>
         { console.log(data)
@@ -32,7 +32,7 @@ function handleSubmit(e)
     }
     console.log(itemData)
 
-    fetch( "http://localhost:3000/movies", {
+    fetch( "https://biniltz.onrender.com/movies", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
