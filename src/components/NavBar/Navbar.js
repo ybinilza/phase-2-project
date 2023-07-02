@@ -20,7 +20,7 @@ function Navbar() {
        <button onClick={()=>history.push("/addmoviebyuser")} className='button'>Add Your Favorite Movie</button>
        <button  onClick={()=>history.push("/Moviesaddedbyuser")} className='button'>Favorite Movie List</button>
        </div>
-       <input type="text" className="searchbar" placeholder='Search for movies here 🎥' />
+       
        
     </div>
     <Route component={() => <Moviepage movietype={"popular"}/>} path="/popularmovies"/>

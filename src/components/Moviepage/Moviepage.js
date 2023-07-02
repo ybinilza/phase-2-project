@@ -6,24 +6,9 @@ import YouTube from 'react-youtube'
 function Moviepage(props) {
   
     const[movie,setMovie] = useState([])
-    //const[movieId,setMovieId]=useState("")
     const[youtubeid, setYouTubeId]=useState("")
 
-   
-
-/*
     
-const video = ()=>
-{   console.log("hello")
-     youtubeid.map((obj)=>
-     {
-      console.log(obj.id)
-      return ( `{<YouTube className='youtube' videoId=${obj.key} opts={opts} />}` )
-     })
-   
-} 
-
-  */   
      useEffect(()=>
      {
         fetch(`https://api.themoviedb.org/3/movie/${props.movietype}?api_key=${API_KEY}`)
