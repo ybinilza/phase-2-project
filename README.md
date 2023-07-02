@@ -25,3 +25,4 @@ All movie related APIs are taken for TMDB
 All videos are linked to Youtube
 
 Note: API key is being added in GitHub for Evaluation purpose and will be removed after project evaluation.
+License: MIT
