@@ -18,3 +18,10 @@ How to use:
 7. You can see the popular movies, top rated movies in different navigation bar
 8. Also, you can add any favorite movie to the list and see trailer for the same
 9. Enjoy the trailer and decide which one you want to invest time for entertainment
+
+
+Credits:
+All movie related APIs are taken for TMDB
+All videos are linked to Youtube
+
+Note: API key is being added in GitHub for Evaluation purpose and will be removed after project evaluation.
