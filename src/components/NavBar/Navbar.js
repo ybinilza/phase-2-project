@@ -7,7 +7,7 @@ import Moviesaddedbyuser from '../Moviesaddedbyuser/Moviesaddedbyuser'
 
 function Navbar() {
  
-  const history =useHistory()
+const history =useHistory()
   
   return (
    <div>
