@@ -12,7 +12,7 @@ const history =useHistory()
   return (
    <div>
     <div className='navbar'>
-      <img className='navbarimage' src={require('/home/binil/Development/code/phase-2/pjct-phase-2/trailertube/src/images/TrailerTube.jpg')}  alt='noooooooooo'  />
+      <img className='navbarimage' src={require('../images/TrailerTube.jpg')}  alt='noooooooooo'  />
        <div className="buttonset">
         <button className='button' onClick={()=>history.push("/popularmovies")}>Popular Movies</button>
        <button onClick={()=>history.push("/topratedmovies")} className='button'>Top Rated Movies </button>
