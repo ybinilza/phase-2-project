@@ -13,26 +13,27 @@ Method 1:
 2. Go to directory phase-2-project and install npm
 3. Run command npm i react-youtube
 4. Run command npm start
-5. Browser opens up and main page of the application is visible
+5. Browser opens up and main page of the application is visible.
 
 OR
 
 
 Method 2:
-Open any web browser and go to page https://trailertube.netlify.app/popularmovies
-Main page is visible 
+Open any web browser and go to page https://trailertube.netlify.app/popularmovies .
+Main page is visible.
 
 
-You can see the popular movies, top rated movies in different navigation bar
-Also, you can add any favorite movie to the list and see trailer for the same
-Enjoy the trailer and decide which one you want to invest time for entertainment
+You can see the popular movies, top rated movies in different navigation bar.
+Also, you can add any favorite movie to the list and see trailer for the same.
+Enjoy the trailer and decide which one you want to invest time for entertainment.
 
 
 Credits:
-All movie related APIs are taken for TMDB
-All videos are linked to Youtube
-Backend is deployed on Render
+All movie related APIs are taken for TMDB.
+All videos are linked to Youtube.
+Backend is deployed on Render.
 Frontend is deployed on netlify.com
 
-Note: API key is being added in GitHub for Evaluation purpose and will be removed after project evaluation.
+Note: 
+API key is being added in GitHub for Evaluation purpose and will be removed after project evaluation.
 License: MIT
