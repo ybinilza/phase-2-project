@@ -14,7 +14,10 @@ Method 1:
 3. Run command npm i react-youtube
 4. Run command npm start
 5. Browser opens up and main page of the application is visible
+
 OR
+
+
 Method 2:
 Open any web browser and go to page https://trailertube.netlify.app/popularmovies
 Main page is visible 
