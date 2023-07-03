@@ -16,8 +16,8 @@ Method 1:
 5. Browser opens up and main page of the application is visible
 OR
 Method 2:
-1. Open any web browser and go to page https://trailertube.netlify.app/popularmovies
-2. Main page is visible 
+Open any web browser and go to page https://trailertube.netlify.app/popularmovies
+Main page is visible 
 
 
 You can see the popular movies, top rated movies in different navigation bar
