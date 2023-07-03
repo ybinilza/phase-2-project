@@ -8,21 +8,20 @@ User gets to see list of popular, top rated or upcoming movies.
 Users get to watch the trailers of the selected movies.
 
 How to use:
-1. Copy the GITHub repository json-server-template and phase-2-project  from link https://github.com/ybinilza?tab=repositories
-[json-server-template is used for Data and phase-2-project consists of Code]
-2. Run db.json as http://localhost:3000 from the folder json-server-template 
-3. Go to directory phase-2-project and install npm
-4. Run command npm i react-youtube
-5. Run command npm start
-6. Browser opens up and main page of the application is visible
-7. You can see the popular movies, top rated movies in different navigation bar
-8. Also, you can add any favorite movie to the list and see trailer for the same
-9. Enjoy the trailer and decide which one you want to invest time for entertainment
+1. Copy the GITHub repository of phase-2-project  from link https://github.com/ybinilza?tab=repositories
+2. Go to directory phase-2-project and install npm
+3. Run command npm i react-youtube
+4. Run command npm start
+5. Browser opens up and main page of the application is visible
+6. You can see the popular movies, top rated movies in different navigation bar
+7. Also, you can add any favorite movie to the list and see trailer for the same
+8. Enjoy the trailer and decide which one you want to invest time for entertainment
 
 
 Credits:
 All movie related APIs are taken for TMDB
 All videos are linked to Youtube
+Backend is deployed on Render
 
 Note: API key is being added in GitHub for Evaluation purpose and will be removed after project evaluation.
 License: MIT
